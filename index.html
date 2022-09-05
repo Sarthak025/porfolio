@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- special fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <!-- css file -->
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- ################ navbar and logo ############## -->
+    <header class="header">
+      <a href="#" class="logo"><i class="fas fa-magic"></i>SS</a>
+
+      <div class="fas fa-bars"></div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#experience">experience</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ############## navbar and logo  ############## -->
+
+    <!-- ############## home page starts ############## -->
+
+    <section id="home" class="home">
+      <h1 class="banner">Hi! there</h1>
+      <h3 class="slogan">Welcome to Sathak Srivastava's Portfolio Page</h3>
+      <a href="#about"><button>Let's Start</button></a>
+
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+
+      <div class="fas fa-cog nut1"></div>
+      <div class="fas fa-cog nut2"></div>
+    </section>
+
+    <!-- ############## home page ends ############## -->
+
+    <!--##################### about section starts #####################-->
+
+    <section id="about" class="about">
+      <h1 class="heading">About Me</h1>
+
+      <div class="row">
+        <div class="content">
+          <h3>A Coder, Web developer in making!!</h3>
+
+          <p>
+            I am someone who loves to explore new things, Drawing and writing
+            would be my hobbies but I also love to play football and badminton.
+            I do like my things organised and easy to access. I like to spend my
+            time on learning new things that could help me expand my creative
+            boundaries
+          </p>
+        </div>
+
+        <div class="image">
+          <img src="about-image.svg" alt="damn you really checked this XD" />
+        </div>
+      </div>
+    </section>
+    <!--##################### about section ends ##################### -->
+
+    <!-- #################### experience section starts ####################-->
+
+    <section id="experience" class="experience">
+      <h1 class="heading">Skills and Education</h1>
+
+      <div class="row">
+        <div class="skills">
+          <h2>My Skills</h2>
+          <div class="rowin">
+            <!-- # -->
+
+            <div class="col">
+              <div class="chart">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  width="160px"
+                  height="160px"
+                >
+                  <defs>
+                    <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                  </defs>
+                  <circle
+                    class="c1"
+                    cx="80"
+                    cy="80"
+                    r="70"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div id="number1"></div>
+              <p>HTML</p>
+            </div>
+
+            <script>
+              let number1 = document.getElementById("number1");
+              let counter1 = 0;
+              setInterval(() => {
+                if (counter1 == 95) {
+                  clearInterval();
+                } else {
+                  counter1 += 1;
+                  number1.innerHTML = counter1 + "%";
+                }
+              }, 10);
+            </script>
+
+            <div class="col">
+              <div class="chart">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  width="160px"
+                  height="160px"
+                >
+                  <defs>
+                    <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                  </defs>
+                  <circle
+                    class="c2"
+                    cx="80"
+                    cy="80"
+                    r="70"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div id="number2"></div>
+              <p>CSS</p>
+            </div>
+
+            <script>
+              let number2 = document.getElementById("number2");
+              let counter2 = 0;
+              setInterval(() => {
+                if (counter2 == 85) {
+                  clearInterval();
+                } else {
+                  counter2 += 1;
+                  number2.innerHTML = counter2 + "%";
+                }
+              }, 10);
+            </script>
+
+            <div class="col">
+              <div class="chart">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  width="160px"
+                  height="160px"
+                >
+                  <defs>
+                    <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                  </defs>
+                  <circle
+                    class="c3"
+                    cx="80"
+                    cy="80"
+                    r="70"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div id="number3"></div>
+              <p>C++</p>
+            </div>
+
+            <script>
+              let number3 = document.getElementById("number3");
+              let counter3 = 0;
+              setInterval(() => {
+                if (counter3 == 80) {
+                  clearInterval();
+                } else {
+                  counter3 += 1;
+                  number3.innerHTML = counter3 + "%";
+                }
+              }, 10);
+            </script>
+
+            <div class="col">
+              <div class="chart">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  width="160px"
+                  height="160px"
+                >
+                  <defs>
+                    <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                  </defs>
+                  <circle
+                    class="c4"
+                    cx="80"
+                    cy="80"
+                    r="70"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div id="number4"></div>
+              <p>PYTHON</p>
+            </div>
+
+            <script>
+              let number4 = document.getElementById("number4");
+              let counter4 = 0;
+              setInterval(() => {
+                if (counter4 == 80) {
+                  clearInterval();
+                } else {
+                  counter4 += 1;
+                  number4.innerHTML = counter4 + "%";
+                }
+              }, 10);
+            </script>
+
+            <!-- # -->
+          </div>
+        </div>
+
+        <div class="education">
+          <h2>Education</h2>
+          <div class="cols">
+            <div class="col-1">
+              <h1>Junior Schooling</h1>
+              <p>
+                DL DAV Model School<br />
+                (2004-2018)
+              </p>
+            </div>
+            <div class="col-1">
+              <h1>High Schooling</h1>
+              <p>
+                Kendriya Vidyalaya<br />
+                (2018-2020)
+              </p>
+            </div>
+            <div class="col-1">
+              <h1>University</h1>
+              <p>
+                Netaji Subhash University of Technology<br />
+                (2021-2025)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- #################### experience section ends #################### -->
+
+    <!-- ##############  contact section starts  ############## -->
+
+    <section id="contact" class="contact">
+      <h1 class="heading">Contact Me</h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="/contact-image.svg" />
+        </div>
+
+        <div class="form-container">
+          <form
+            action="https://formsubmit.co/sarthaksrivastava025@gmail.com"
+            method="POST"
+          >
+            <div class="inputbox">
+              <input type="text" placeholder="First name" />
+              <input type="text" placeholder="Last name" />
+            </div>
+
+            <input
+              type="email"
+              name="email"
+              placeholder="email address"
+              required
+            />
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="message"
+            ></textarea>
+            <input type="submit" value="send" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ############## contact section ends ############## -->
+
+    <!-- jsquery file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- javascript file -->
+
+    <script src="java.js"></script>
+  </body>
+</html>

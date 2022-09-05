@@ -1,0 +1,701 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+/*  font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif; 
+*/
+
+:root{
+    --color : #6c5ce7;
+
+}
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    box-sizing: border-box;
+    /* text-transform:uppercase; */
+    transition: all 0s linear;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.heading{
+    margin: 2rem;
+    padding-top: 6rem;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: var(--color);
+    position: relative;
+    letter-spacing: 0.2rem;
+
+}
+
+.heading::before, .heading::after{
+    content: '';
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-top: 0.4rem solid var(--color);
+    border-left: 0.4rem solid var(--color);
+}
+
+.heading::before{
+    top: 5.8rem;
+    left: -2rem;
+}
+
+.heading::after{
+    bottom: -0.5rem;
+    right: -2rem;
+    transform: rotate(180deg);
+}
+
+.btn{
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    background: var(--color);
+    color: #fff;
+    cursor: pointer;
+    height: 3.5rem;
+    width: 15rem;
+    font-size: 1.7rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, .3);
+}
+
+
+.btn:hover{
+    letter-spacing: 0.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header{
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem;
+    position: fixed;
+    top:0; 
+    left: 0;
+    z-index: 100;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.header .logo i{
+    padding:0 .5rem;
+}
+
+.header .navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.header .navbar ul li{
+    margin:0 1.5rem;
+
+}
+
+.header .navbar ul li a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+    padding: 1rem;
+}
+
+.header .navbar ul li a:hover{
+    color: black;
+}
+
+.header .fa-bars{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+    display: none;
+
+}
+
+
+
+.home{
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(purple, var(--color));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    padding: 0 1rem;
+    position: relative;
+    overflow:hidden !important;
+
+}
+
+.home .banner{
+    font-family: 'Poppins', sans-serif; 
+    color: #fff;
+    font-size: 5rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, .3) ;
+
+
+}
+
+.home .slogan{
+    font-family: 'Noto Sans', sans-serif;
+    color: #fff;
+    font-size: 2.5rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, .3) ;
+    
+}
+
+.home button{
+    height: 4rem;
+    width: 18rem;
+    background: #fff;
+    color: #444;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.3);
+
+}
+
+.home button:hover{
+    letter-spacing: 0.1rem;
+
+}
+
+.home .wave{
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    height:11rem;
+    width: 100%;
+    background: url(/wave.png);
+    background-size: 100rem 11rem;
+    background-repeat: repeat-x;
+    animation:waves 10s linear infinite;
+    overflow: hidden;
+
+}
+
+.home .wave2{
+    animation-direction: reverse;
+    opacity: 0.2;
+}
+.home .wave3{
+    animation-duration: 40s;
+    opacity: 0.5;
+}
+
+
+@keyframes waves{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 100rem;
+
+    }
+}
+
+
+.home .fa-cog{
+    position: absolute;
+    font-size: 30rem;
+    opacity: 0.15;
+    color: #fff;
+    animation: rotate 20s linear infinite;
+
+}
+
+.home .nut1{
+    top: 10%;
+    left: -15rem;
+}
+
+.home .nut2{
+    bottom: 25%;
+    right: -13rem;
+    animation-direction: reverse;
+
+}
+
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ########################################################### */
+.about{
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 4rem;
+
+}
+
+.about .row .content{
+    text-align: left;
+
+}
+
+.about .row .image img{
+    width: 40vw;
+
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: var(--color);
+
+}
+
+.about .row .content p{
+    font-size: 1.5rem;
+    color: #333;
+    padding: 1rem 0;
+    
+}
+
+.about::before, .about::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+    border-radius: 50%;
+}
+
+.about::before{
+    height: 50rem;
+    width: 50rem;
+    background: #ccc;
+    bottom: -10rem;
+    left: -10rem;
+}
+.about::after{
+    height: 50rem;
+    width: 50rem;
+    background: var(--color);
+    top: -10rem;
+    right: -10rem;
+}
+
+
+ /* ########################################################## */
+
+.experience{
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+
+}
+
+.experience .row{
+    display: flex;
+    flex-flow: column;
+    align-items : center;
+    justify-content : space-around;
+    padding: 0 4rem;
+    color: var(--color);
+}
+
+.experience .row h2{
+    font-size: 3rem;
+}
+
+.experience .row .skills{
+    width: 100%;
+}
+
+.experience .row .skills .rowin{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+
+
+
+
+.experience .row .education{
+    width: 50%;
+}
+
+.experience .row .skills h2{
+    margin: 2rem;
+    color: var(--color);
+    font-size: 3rem;
+}
+
+#number1 , #number2  ,#number3 , #number4{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.experience .row .skills p{
+    margin: 2rem;
+    color: var(--color);
+    font-size: 2rem;
+}
+
+
+
+circle{
+    fill: none;
+    stroke:url(#GradientColor);
+    stroke-width: 1.7rem;
+    stroke-dasharray: 437;
+    stroke-dashoffset: 437;
+
+}
+
+.c1{
+    animation: anim1 2s linear forwards;
+}
+
+.c2{
+    animation: anim2 2s linear forwards;
+}
+
+.c3{
+    animation: anim3 2s linear forwards;
+}
+
+.c4{
+    animation: anim4 2s linear forwards;
+}
+
+
+
+@keyframes anim1{
+    100%{
+        stroke-dashoffset: 30;
+    }
+}
+
+@keyframes anim2{
+    100%{
+        stroke-dashoffset: 65;
+    }
+}
+
+@keyframes anim3{
+    100%{
+        stroke-dashoffset: 45;
+    }
+}
+
+@keyframes anim4{
+    100%{
+        stroke-dashoffset: 45;
+    }
+}
+
+
+svg{
+    margin: 2rem 1rem;
+     
+}
+
+
+.experience .row .education{
+    padding-top: 4rem;
+}
+
+.experience .row .education .cols{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    width: 100%;
+    margin: auto;
+    padding: auto;
+
+}
+.col-1{
+    width: 33.33%;
+}
+
+.col-1 h1{
+    font-size: 2.5rem;
+}
+
+.col-1 p{
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ########################################################### */
+
+.contact{
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .row .image img{
+    height: 70vh;
+    width: 50vw;
+
+}
+
+.contact .row .form-container{
+    width: 50%;
+    text-align: left;
+    padding: 0 5rem;
+}
+
+.contact .row .form-container input , textarea{
+    outline: none;
+    border: none;
+    height: 4rem;
+    background: none;
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, .2);
+    padding: 0 1rem;
+    margin: 1rem;
+    font-size: 1.6rem;
+
+}
+
+.contact .row .form-container .inputbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contact .row .form-container .inputbox input[type="text"]{
+    width: 49%;
+
+}
+
+.contact .row .form-container input[type="email"]{
+    width: 100%;
+    
+}
+
+.contact .row .form-container textarea{
+    width: 100%;
+    height: 20rem;
+    padding: 1rem;
+    resize: none;
+    
+}
+
+.contact .row .form-container input[type="submit"]{
+    background-color: var(--color);
+    color: #fff;
+    cursor: pointer;
+    height: 4rem;
+    width: 10rem;
+
+}
+
+.contact .row .form-container input[type="submit"]:hover{
+    opacity: 0.8; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries for responsive */
+
+@media (max-width: 768px){
+    html{
+        font-size: 60%;
+
+    }
+    .header .fa-bars{
+        display: block;
+        transition: all .2s linear;
+    }
+
+
+    .header .navbar{
+        position: fixed;
+        top:-120% ;
+        left:0;
+        height:auto;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1000;
+        border-top: .1rem solid rgba(0, 0, 0, .3);
+
+    }
+
+    .header .navbar ul{
+        height: 100%;
+        width: 100%;
+        flex-flow: column;
+
+    }
+
+    .header .navbar ul li{
+        margin: 1rem 0;
+
+    }
+
+    .header .navbar ul li a{
+        color: #444;
+        font-size: 2.4rem;
+
+    }
+
+    .header .fa-times{
+        transform: rotate(180deg);
+        transition: all .2s linear;
+    }
+
+    .header .nav-toggle{
+        top:5.8rem;
+        transition: all 0.2s ease;
+    }
+
+    .home .banner{
+        font-size: 4rem;
+
+    }
+
+    .home .slogan{
+        font-size: 1.7em; ;
+    }
+
+    .about{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .about .row{
+        flex-flow:column-reverse;
+        padding: 0 2rem;
+    }
+
+    .about .row .image img{
+        width: 80vw;
+    }
+
+    .experience .row .skills .rowin{
+        flex-flow: column;
+    }
+
+    .experience .row .education .cols{
+        flex-flow: column;
+        width: 100%;
+    }
+
+    
+
+
+
+    .contact{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+
+    }
+
+    .contact .row{
+        flex-flow: column;
+    }
+
+    .contact .row .image img{
+        width: 100vw;
+    }
+
+    .contact .row .form-container{
+        width: 90%;
+        padding: 0 1.5rem;
+    }
+
+
+
+}
+
