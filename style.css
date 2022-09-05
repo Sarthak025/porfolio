@@ -435,13 +435,13 @@ circle{
 
 @keyframes anim3{
     100%{
-        stroke-dashoffset: 45;
+        stroke-dashoffset: 95;
     }
 }
 
 @keyframes anim4{
     100%{
-        stroke-dashoffset: 45;
+        stroke-dashoffset: 95;
     }
 }
 
